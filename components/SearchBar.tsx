@@ -10,7 +10,7 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder="Buscar película..."
+        placeholder="Buscar películas.."
         className="w-full px-5 py-3 rounded-2xl border-2 border-yellow-400 
         focus:outline-none focus:border-yellow-400 bg-white text-gray-900 
         font-medium shadow-sm placeholder-gray-400"

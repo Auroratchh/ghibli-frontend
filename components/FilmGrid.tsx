@@ -31,12 +31,8 @@ export default function FilmGrid({ films, loading, error }: FilmGridProps) {
   if (films.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-20">
-        <p className="text-gray-900 font-bold text-xl">
-          No se encontraron películas
-        </p>
-        <p className="text-gray-500 text-sm mt-1">
-          Intenta con otro término de búsqueda
-        </p>
+        <p className="text-gray-900 font-bold text-xl"> No se encontraron películas </p>
+        <p className="text-gray-500 text-sm mt-1"> Intenta con otro término de búsqueda </p>
       </div>
     );
   }

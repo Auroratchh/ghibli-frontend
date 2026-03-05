@@ -32,7 +32,7 @@ export default function FilmCard({ film }: FilmCardProps) {
               Score:
             </span>
             <span className="text-yellow-400 text-sm">
-              {film.rt_score}/ 100
+              {film.rt_score} / 100
             </span>
           </div>
         </div>
