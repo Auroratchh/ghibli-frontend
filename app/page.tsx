@@ -27,9 +27,11 @@ export default function Home() {
     fetchFilms();
   }, []);
 
-  const filteredFilms = films.filter((film) =>
-    film.title.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredFilms = search
+  ? films.filter((film) =>
+      film.title.toLowerCase().includes(search.toLowerCase())
+    )
+  : films.slice(0, 4);
 
   return (
     <main className="min-h-screen bg-white">
